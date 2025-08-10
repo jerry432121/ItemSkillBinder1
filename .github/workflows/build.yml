@@ -18,10 +18,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn -f ItemSkillBinder/pom.xml clean package
+        run: mvn -f "ItemSkillBinder (1)/pom.xml" clean package
 
       - name: Upload jar
         uses: actions/upload-artifact@v4
         with:
           name: plugin-jar
-          path: ItemSkillBinder/target/*.jar
+          path: "ItemSkillBinder (1)/target/*.jar"
